@@ -15,7 +15,7 @@ namespace LowLevelHooking
         /// <summary>
         /// The virtual key code without modifiers.
         /// </summary>
-        public uint KeyCode { get; }
+        public VirtualKey KeyCode { get; }
 
         /// <summary>
         /// The keyboard scan code.
@@ -45,7 +45,7 @@ namespace LowLevelHooking
         /// <summary>
         /// Initializes a new instance of the <see cref="GlobalKeyboardHookEventArgs"/> class.
         /// </summary>
-        public GlobalKeyboardHookEventArgs(bool isUp, uint keyCode, uint scanCode, bool alt, uint time, GlobalKeyboardEventSource source)
+        public GlobalKeyboardHookEventArgs(bool isUp, VirtualKey keyCode, uint scanCode, bool alt, uint time, GlobalKeyboardEventSource source)
         {
             IsUp = isUp;
             KeyCode = keyCode;

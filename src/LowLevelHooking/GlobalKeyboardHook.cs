@@ -44,7 +44,7 @@ namespace LowLevelHooking
             {
                 var e = new GlobalKeyboardHookEventArgs(
                     (lParam.flags & LLKHF.UP) != 0,
-                    lParam.vkCode,
+                    (VirtualKey)lParam.vkCode,
                     lParam.scanCode,
                     (lParam.flags & LLKHF.ALTDOWN) != 0,
                     lParam.time,
