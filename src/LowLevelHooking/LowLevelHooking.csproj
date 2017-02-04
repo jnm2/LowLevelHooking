@@ -1,17 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
-  <PropertyGroup Label="Configuration">
-    <DocumentationFile>bin\Debug\netstandard1.3\LowLevelHooking.xml</DocumentationFile>
-    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-  </PropertyGroup>
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net20;netstandard1.3</TargetFrameworks>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>bin\Debug\netstandard1.3\LowLevelHooking.xml</DocumentationFile>
   </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="**\*.cs" />
-    <EmbeddedResource Include="**\*.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="NETStandard.Library" Version="1.6.1" />
-  </ItemGroup>
 </Project>
